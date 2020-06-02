@@ -1,0 +1,202 @@
+QUESTÂO 1
+
+public class Pessoa{
+
+    private string nome;
+    private string endereco;
+    provate string telefone;
+    
+}
+
+//get set de nome
+
+
+public void setNome(string nome){
+
+
+ this.nome = nome;
+
+}
+
+
+public void getNome(){
+
+ return(nome);
+}
+
+//get e set de engereço
+
+public void setEndereco(string endereco){
+
+ this.endereco = endereco;
+}
+
+public void getEndereco(){
+
+ return(endereco);
+}
+
+//set e get
+
+public void getTelefone(string telefone){
+
+ this.telefone = telefone;
+}
+
+public setTelefone(string telefone){
+  
+ return(telefone);
+}
+
+
+
+
+
+public class Fornecedor extends Pessoa {
+    
+    private float valorCredito;
+    private float valorDivida;
+    
+}
+
+//set e get de valorCredito
+
+public void setValorCredito(float valorCredito){
+
+ this.valorCredito = valorCredito;
+}
+
+public void getValorCredito(){
+
+ return(valorCredito);
+}
+
+//set e get de valorDivida
+
+public void setValorDivida(float valorDivida){
+
+ this.valorDivida = valorDivida;
+}
+
+public void getValorDivida(){
+
+ return(valorDivida);
+}
+
+public void obterSaldo(float valorCredito , valorDivida){
+
+  super.valorCredito -= valorDivida; // esse é valor credito - valor divida
+}
+
+
+
+Questão 2
+import java.util.Scanner;
+
+public class Teste {
+
+    public class main (string arg []){
+     scanner vc = new scanner(input);//Declaração de entrada para valor credito
+     scanner vd = new scanner(input);//declaração de entrada para valor divida
+     
+     Fornecedor fornecedor = new Fornecedor();
+     fornecedor.setNome("alimentos sa");
+     fornecedor.setEnedereco("rua bico de pato");
+     fornecedor.setTelefone("36521-8956");
+     system.out.println("Nome :", +fonecedor.getNome());
+     system.out.println("Enederco :". +fornecedor.getEndereco());
+     system.out.println("Telefone :", +fornecedor.getTelefone());
+     
+     system.out.printf("Insira o valor do seu credito e dividas respectivamentes");
+     vc = valorCredito.nextfloat(system); // entrada do credito
+     vd = valorDivida.nextfloat(system);  // entrada da divida
+     
+     system.out.println("Seu Saldo :", +fornecedor.calculaSaldo());// mostrada o saldo
+    }
+}
+
+
+
+
+
+
+
+QUESTÂO 3
+
+//Classe Pessoa
+Public class Pessoa{
+
+ private string nome;
+ private int codigomat;
+}
+
+
+
+
+// Classe Empregado
+public class Empregado Extends Pessoa{
+
+ private int codigoSetor;
+ private float salarioBase;
+ private float imposto;
+
+public void setCodigoSetor(int codigoSetor){
+
+ this.codigoSetor = codigoSetor;
+}
+
+public void getCodigoSetor(){
+
+ return(codigoSetor);
+}
+
+public void setSalarioBase(float salarioBase){
+
+ this.salarioBase = salarioBAse;
+}
+
+public void getSalarioBase(){
+
+ return(salarioBase);
+}
+
+public void setImposto(float imposto){
+
+ this.imposto = imposto;
+}
+
+public void getImposto(){
+
+ return(imposto);
+}
+
+public void calculaSalario(float imposto,salario){
+
+ super.salario += salario*imposto;
+}
+
+
+
+// Classe para Teste ou main
+Import java.util.scanner;
+public class Teste{
+
+ public class main (string args[]){
+  scanner c = new scanner(input); // nao sei se devia declarar o scanner aqui? c = recebe codigo do setor
+  scanner s = new scanner(input); // s = salario base
+  scanner i = new scanner(input); // i = imposto
+
+  system.out.printf("Insira o salrio base: ");
+  s = salarioBase.nextFloat(system); // eu acho que aqui eu esqueci de criar objetos para enviar os valor para salarioBase.
+  system.out.printf("Insira codigo do setor");
+  c = codigoSetor.nextInt(system);
+  system.out.printf("Insira o imposto em numero indice exemplo 3% = 0,03")
+  i = imposto.nextfloat(system);
+
+  Empregado emprego = new Emprego();
+  system.out.printfln("Novo calculo do salrio %f :", +empregado.calculaSalario());
+
+  system.out.printf("Fim Teste! \n");
+}
+
+ }
