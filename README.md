@@ -1,2 +1,3 @@
-# Exercicios-do-Python-B-sico-
-Exercicios básico do Pyrhon
+# Exercicios-do-Python-Basico
+
+Exercicios básico do Python
